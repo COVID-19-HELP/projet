@@ -1,4 +1,10 @@
 package com.covid19help.projet.entity;
 
-public class Position {
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
+
+@Document
+public class Position extends Model{
+    @Id
+    private String id;
 }
